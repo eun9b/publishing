@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="17px" height="17px" viewBox="0 0 17 17" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Group</title>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Group">
+            <circle id="Oval" fill="#6E0FFF" cx="8.5" cy="8.5" r="8.5"></circle>
+            <image id="cmmn-chck-w" x="4" y="6" width="9" height="6" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAcCAYAAAATFf3WAAAABGdBTUEAALGN5fIAKQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAKKADAAQAAAABAAAAHAAAAAANj1rQAAACJUlEQVRYCc2VTUsbURSGo9SPrly49jd0rSgWpaCIVEKxlCJKEREpbTdduBNEREoRKUWKGKS7YkURRaz/oIJrV25cueiiTbX1Mz4HE3KZ3DNzMzPJOPCSe99zznseNGRSqXvy5HK5NDpAWfQT9dwTtFQKmClke3oTh4Rq2kaW9/YTBQRixgdOStnEAFk+GwAn5WT+giyec4CTlup/B1n6wRHuXdX/vYB9dIR7kwTcvCPc6xI4BpvQe5RBk6i5pCmCQd4CCnpuaJgoWYPZgo490yfcW0uaQxjkfPJk264CN26Np/DdNoH3B7VZhxxMZmvQZxT0CNyYGknxl0+CQLarw0qBGYFb9MktlARuVIm5s2k4KnQrn/Ly7vANMYr0CtwXJcu0Be6VMWo/0qS9qM2wv1w67QlFlx6BWzIHlfM1/khx0udEYx3aU4JMWyAfa1HUBG7ZHFDOAjes5Vh9Bh6iH0qgaZ9y6fKG4NWijNmonAVuyDvvdGewEe0qwaZ9xqW7EMpZ4FbMBuV8hf+yMBfqkwCB3FEWmLZAPkEC99UsKGeBexEKyjtEUAPaVhaZ9j8uLl8LgXvu3RPpTqBAbqGozyUBg5FgtGGC69FmBEKBe6blx+LnITdCQF4wk44FIiiERfI7uV4GpMANBOXGWs9DrjlAntPzNNblrmEsfoBWfSAFrt81ryJ9echvFsj/eH0VWVpuKCDy4/wWHaLfSN7jj8rNce2/BYIHXgOhMivrAAAAAElFTkSuQmCC"></image>
+        </g>
+    </g>
+</svg>

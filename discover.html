@@ -1,0 +1,384 @@
+<!Doctype html>
+<html lang="ko">
+	<head>
+		<meta charset="utf-8" />
+		<title>Discover - featuring</title>
+		<meta name="viewport" content="initial-scale=1, minimum-scale=1, maximum-scale=1, width=device-width, target-densitydpi=medium-dpi" />
+		<link rel="stylesheet" href="css/common.css" />
+		<link rel="stylesheet" href="css/discover.css" />
+	</head>
+	<body>
+		<div id="skipNav">
+			<ul>
+				<li><a href="#snContent">본문바로가기</a></li>
+				<li><a href="#snMenu">주메뉴 바로가기</a></li>
+			</ul>
+		</div>
+		<button type="button" class="btn-menu"><span>메뉴 열림</span></button>
+		<header><!-- 모바일 메뉴 열리고 닫힘 selected class로 컨트롤 / pc 메뉴 축소는 sm-type class로 컨트롤 -->
+			<div class="def-m">
+				<h1><a href="#"><span>featuring</span></a></h1>
+				<div class="in-wrap">
+					<div class="p-inf selected"><!-- 열리고 닫힘 selected class로 컨트롤 -->
+						<div class="m-info">
+							<a>
+								<span><img src="images/@photo.jpg" alt="" /></span>
+								<em>guest@featuring.in 님</em>
+							</a>
+						</div>
+						<div class="ms-info">
+							<div class="ut-btn">
+								<a href="#">내 정보</a>
+								<a href="#" class="btn-logout">로그아웃</a>
+							</div>
+							<div class="set-w">
+								<a href="#" class="btn-mem">멤버십 구매하기</a>
+								<a href="#" class="btn-use">이용 및 결제</a>
+							</div>
+							<div class="rep-w">
+								<ul>
+									<li>조회한 리포트 <a href="#">113개</a></li>
+									<li>즐겨찾기한 리포트 <a href="#">14개</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<nav>
+						<ul>
+							<li class="selected"><a href="#" class="m-dash"><span>대시보드</span></a></li>
+							<li><a href="#" class="m-infu"><span>인플루언서 분석</span></a></li>
+							<li><a href="#" class="m-offi"><span>오피셜 계정 분석</span></a></li>
+							<li><a href="#" class="m-hash"><span>해시태그 검색</span></a></li>
+							<li><a href="#" class="m-rank"><span>랭킹</span></a></li>
+							<li><a href="#" class="m-blog"><span>블로그</span></a></li>
+						</ul>
+					</nav>
+				</div>
+				<button class="btn-close"><span>메뉴 닫힘</span></button>
+				<div class="menu-ctrl">
+					<button type="button" class="btn-pin"><span>메뉴 고정</span></button>
+					<button type="button" class="btn-small"><span>메뉴 접기</span></button>
+				</div>
+			</div>
+		</header>
+		<div class="all-wrapper">
+			<div class="utill-w">
+				<fieldset>
+					<legend>검색</legend>
+					<input type="search" placeholder="인스타그램, 유트브 계정을 입력하세요." />
+					<button type="submit"><span>검색</span></button>
+				</fieldset>
+				<!-- pc type -->
+				<div class="p-inf">
+					<div class="buy-ms">
+						<a href="#">멤버십 구매하기</a>
+					</div>
+					<div class="m-info">
+						<a>
+							<span><img src="images/icon_profile.png" alt="" /></span>
+							<em>guest@featuring.in 님</em>
+						</a>
+					</div>
+				</div>
+				<!-- //pc type -->
+			</div>
+			<hr /> 
+			<main id="snContent">
+				<div class="conts-wrap discover-w">
+                    <div class="tit-group">
+                        <h2>Discover</h2>
+                        <p>피처링 AI가 조건에 어울리는 인플루언서 10인을 추천해드립니다.</p>
+                    </div>
+                    <fieldset>
+                        <legend>인플루언서 추천 필터</legend>
+                        <ul>
+                            <li>
+                                <label for="cPrd">캠페인 제품</label>
+                                <div class="cp-box">
+                                    <select id="cPrd" title="카테고리 선택">
+                                        <option>제품 카테고리</option>
+                                    </select>
+                                    <input type="text" placeholder="제품명을 입력해주세요." title="제품명 입력" />
+                                    <input type="text" placeholder="제품소개 또는 판매 URL 주소를 입력해주세요." title="제품소개 또는 판매 URL 입력" />
+                                </div>
+                            </li>
+                            <li>
+                                <label for="liUp">리스트업 목적</label>
+                                <div>
+                                    <select id="liUp">
+                                        <option>라이징스타 발굴</option>
+                                    </select>
+                                </div>
+                            </li>
+                            <li>
+                                <label for="keyW">캠페인 관련 키워드</label>
+                                <div class="key-box">
+                                    <input type="text" placeholder="인플루언서가 언급하는 키워드를 최대 10개까지 입력해보세요. (ex. ootd, 데일리룩)" />
+                                    <button type="button"><span>키워드 추가</span></button>
+                                </div>
+                            </li>
+                            <li>
+                                <label for="budget">캠페인 예산</label>
+                                <div class="bdg-box">
+                                    <input type="text" placeholder="숫자만 입력해주세요" />
+                                </div>
+                            </li>
+                            <li>
+                                <label for="infS">인플루언서 성별</label>
+                                <div>
+                                    <select id="infS">
+                                        <option>전체</option>
+                                        <option>남</option>
+                                        <option>여</option>
+                                    </select>
+                                </div>
+                            </li>
+                            <li>
+                                <label for="infA">인플루언서 연령</label>
+                                <div>
+                                    <select id="infA">
+                                        <option>전체</option>
+                                    </select>
+                                </div>
+                            </li>
+                            <li>
+                                <i class="tit">팔로워 수</i>
+                                <div class="follower-c">
+                                    <div class="count-c">
+                                        <span>1k</span>
+                                        <span>10k</span>
+                                        <span>30k</span>
+                                        <span>50k</span>
+                                        <span>100k</span>
+                                        <span>200k</span>
+                                        <span>500k</span>
+                                        <span>1m</span>
+                                        <span>5m</span>
+                                        <span>5m+</span>
+                                    </div>
+                                    <div class="process-w">
+                                        <span style="left:40%;width:30%;"><button type="button" class="start"><span>검색 팔로워 수 시작</span></button><button type="button" class="end"><span>검색 팔로워 수 마지막</span></button></span>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <label for="odS">오디언스 성별</label>
+                                <div>
+                                    <select id="odS">
+                                        <option>전체</option>
+                                    </select>
+                                </div>
+                            </li>
+                            <li>
+                                <label for="odA">오디언스 연령</label>
+                                <div>
+                                    <select id="odA">
+                                        <option>전체</option>
+                                    </select>
+                                </div>
+                            </li>
+                            <li>
+                                <label for="ref">참고 인플루언서(1명)</label>
+                                <div>
+                                    <input type="text" id="ref" placeholder="계정명을 입력해주세요." />
+                                </div>
+                            </li>
+                            <li>
+                                <i class="tit">리스트업 제외 인플루언서</i>
+                                <div class="check-w">
+                                    <span><input type="checkbox" id="mIf1" /><label for="mIf1">제외 안함</label></span>
+                                    <span><input type="checkbox" id="mIf2" checked="checked" /><label for="mIf2">전체</label></span>
+                                    <span><input type="checkbox" id="mIf3" /><label for="mIf3">외국인</label></span>
+                                    <span><input type="checkbox" id="mIf4" /><label for="mIf4">셀럽</label></span>
+                                    <span><input type="checkbox" id="mIf5" /><label for="mIf5">팬페이지</label></span>
+                                    <span><input type="checkbox" id="mIf6" /><label for="mIf6">판매 (셀마켓)</label></span>
+                                    <span><input type="checkbox" id="mIf7" /><label for="mIf7">예약서비스</label></span>
+                                    <span><input type="checkbox" id="mIf8" /><label for="mIf8">허위광고</label></span>
+                                    <span><input type="checkbox" id="mIf9" /><label for="mIf9">성인콘텐츠</label></span>
+                                    <span><input type="checkbox" id="mIf10" /><label for="mIf10">브랜드</label></span>
+                                </div>
+                            </li>
+                        </ul>
+                        <div class="btn">
+                            <a href="#">리스트업 요청하기</a>
+                        </div>
+                    </fieldset>
+                    <div class="stit-w">
+                        <h3>리스트업 요청</h3>
+                        <div class="noti-box">
+                            <a><span>설명보기</span></a>
+                            <div>설명설명설명설명설명설명</div>
+                        </div>
+                    </div>
+                    <div class="listup-req type-pc">
+                        <table>
+                            <caption>리스트업 요청</caption>
+                            <thead>
+                                <tr>
+                                    <th scope="col">캠페인 제품명</th>
+                                    <th scope="col">인플루언서 조건</th>
+                                    <th scope="col">오디언스 조건</th>
+                                    <th scope="col">리스트업 제외 요청</th>
+                                    <th scope="col">상태</th>
+                                    <th></th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <div class="prd-name">
+                                            <strong>JEI PLATZ 백팩</strong>
+                                            <p>요청날짜<br />2021.02.01 08:58 AM</p>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <ul>
+                                            <li>성별 : 전체</li>
+                                            <li>연령 : 전체</li>
+                                            <li>팔로워 수 : <em>10k - 50k</em></li>
+                                        </ul>
+                                    </td>
+                                    <td>
+                                        <ul>
+                                            <li>성별 : 전체</li>
+                                            <li>연령 : 전체</li>
+                                            <li>팔로워 수 : <a href="#">10k - 50k</a></li>
+                                        </ul>
+                                    </td>
+                                    <td>해당사항 없음</td>
+                                    <td><span class="condi end">완료</span></td>
+                                    <td><a href="#" class="btn-dirgo"><span>바로가기</span></a></td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="prd-name">
+                                            <strong>JEI PLATZ 백팩</strong>
+                                            <p>요청날짜<br />2021.02.01 08:58 AM</p>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <ul>
+                                            <li>성별 : 전체</li>
+                                            <li>연령 : 전체</li>
+                                            <li>팔로워 수 : <em>10k - 50k</em></li>
+                                        </ul>
+                                    </td>
+                                    <td>
+                                        <ul>
+                                            <li>성별 : 전체</li>
+                                            <li>연령 : 전체</li>
+                                            <li>팔로워 수 : <a href="#">10k - 50k</a></li>
+                                        </ul>
+                                    </td>
+                                    <td>해당사항 없음</td>
+                                    <td><span class="condi ing">진행중</span></td>
+                                    <td><a href="#" class="btn-dirgo"><span>바로가기</span></a></td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="prd-name">
+                                            <strong>JEI PLATZ 백팩</strong>
+                                            <p>요청날짜<br />2021.02.01 08:58 AM</p>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <ul>
+                                            <li>성별 : 전체</li>
+                                            <li>연령 : 전체</li>
+                                            <li>팔로워 수 : <em>10k - 50k</em></li>
+                                        </ul>
+                                    </td>
+                                    <td>
+                                        <ul>
+                                            <li>성별 : 전체</li>
+                                            <li>연령 : 전체</li>
+                                            <li>팔로워 수 : <a href="#">10k - 50k</a></li>
+                                        </ul>
+                                    </td>
+                                    <td>해당사항 없음</td>
+                                    <td><span class="condi end">완료</span></td>
+                                    <td><a href="#" class="btn-dirgo"><span>바로가기</span></a></td>
+                                </tr>
+                                <tr>
+                                    <td colspan="6">
+                                        <p class="no-data">요청된 리스트업이 없습니다.<br />지금 리스트업을 신청해보세요!</p>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="listup-req type-mo">
+                        <div class="in-box">
+                            <strong>JEI PLATZ 백팩</strong>
+                            <p>2021.02.01 08:58 AM</p>
+                            <ul>
+                                <li>
+                                    <i>인플루언서 조건</i>
+                                    <p>성별 : 전체/연령 : 전체/팔로워 수 : <em>10k - 50k</em></p>
+                                </li>
+                                <li>
+                                    <i>오디언스 조건</i>
+                                    <p>성별 : 전체/연령 : 전체/참고 : <a href="#">@dsaxxxxxxdfs</a></p>
+                                </li>
+                                <li>
+                                    <i>리스트업 제외 요청</i>
+                                    <p>해당사항 없음</p>
+                                </li>
+                            </ul>
+                            <div class="condi-w">
+                                <a href="#" class="btn-dirgo"><span>바로가기</span></a>
+                                <span class="condi end">완료</span>
+                            </div>
+                        </div>
+                        <div class="in-box">
+                            <strong>JEI PLATZ 백팩</strong>
+                            <p>2021.02.01 08:58 AM</p>
+                            <ul>
+                                <li>
+                                    <i>인플루언서 조건</i>
+                                    <p>성별 : 전체/연령 : 전체/팔로워 수 : <em>10k - 50k</em></p>
+                                </li>
+                                <li>
+                                    <i>오디언스 조건</i>
+                                    <p>성별 : 전체/연령 : 전체/참고 : <a href="#">@dsaxxxxxxdfs</a></p>
+                                </li>
+                                <li>
+                                    <i>리스트업 제외 요청</i>
+                                    <p>해당사항 없음</p>
+                                </li>
+                            </ul>
+                            <div class="condi-w">
+                                <span class="condi ing">진행중</span>
+                            </div>
+                        </div>
+                        <div class="in-box">
+                            <strong>JEI PLATZ 백팩</strong>
+                            <p>2021.02.01 08:58 AM</p>
+                            <ul>
+                                <li>
+                                    <i>인플루언서 조건</i>
+                                    <p>성별 : 전체/연령 : 전체/팔로워 수 : <em>10k - 50k</em></p>
+                                </li>
+                                <li>
+                                    <i>오디언스 조건</i>
+                                    <p>성별 : 전체/연령 : 전체/참고 : <a href="#">@dsaxxxxxxdfs</a></p>
+                                </li>
+                                <li>
+                                    <i>리스트업 제외 요청</i>
+                                    <p>해당사항 없음</p>
+                                </li>
+                            </ul>
+                            <div class="condi-w">
+                                <a href="#" class="btn-dirgo"><span>바로가기</span></a>
+                                <span class="condi end">완료</span>
+                            </div>
+                        </div>
+                        <div class="in-box">
+                            <p class="no-data">요청된 리스트업이 없습니다.<br />지금 리스트업을 신청해보세요!</p>
+                        </div>
+                    </div>
+                </div>
+			</main>
+		</div>
+	</body>
+</html>

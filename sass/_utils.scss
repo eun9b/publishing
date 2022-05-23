@@ -1,0 +1,45 @@
+// Define breakpoints
+$breakpoints: (
+	sm: 360px,
+	xsm-s: 780px,
+	xsm: 980px,
+	md: 1024px,
+	xmd: 1220px,
+	xs: 1530px,
+
+);
+// Create mixin
+@mixin respond-to($breakpoint) {
+  @media (min-width: #{map-get($breakpoints, $breakpoint)}) {
+    @content;
+  }
+}
+/* var */
+$color-def: #000;
+$color-sub: #212529;
+$color-dis: #8b8b8b;
+$color-point: #6e0fff;
+$color-point2: #172029;
+$font-def: 'Noto Sans KR','Roboto','Droid Sans','Malgun Gothic','Helvetica','Apple-Gothic','애플고딕','Tahoma',dotum,'돋움',gulim,'굴림', sans-serif;
+$font-point: 'HelveticaNeue','Roboto','Droid Sans','Malgun Gothic','Helvetica','Apple-Gothic','애플고딕','Tahoma',dotum,'돋움',gulim,'굴림', sans-serif;
+
+/* mixin */
+//base
+@mixin hiddenText {
+	overflow: hidden;
+    display: inline-block;
+	font-size: 1px;
+	line-height: 0;
+	text: {
+		indent: -9999px;
+		align: left;
+	}
+}
+@mixin clearfix {
+	&:after {
+		display: block;
+		content:'';
+		clear: both;
+	}
+}
+//contents

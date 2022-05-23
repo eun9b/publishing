@@ -1,0 +1,188 @@
+@import "utils.scss";
+
+.ranking {
+    max-width: 1460px;
+    margin: 0 auto;
+}
+.array-w {
+    display: flex;
+    position: relative;
+    z-index: 5;
+    margin-top: 20px;
+    .in-cate {
+        position: relative;
+        padding-right: 30px;
+        em {
+            display: block;
+            color: rgba($color: #000, $alpha: 0.83);
+        }
+        button {
+            display: inline-flex;
+            align-items: center;
+            margin-top: 5px;
+            color: $color-point;
+            font-weight: bold;
+            &:after {
+                content: '';
+                display: block;
+                width: 10px;
+                height: 10px;
+                margin-left: 5px;
+                border: {
+                    width: 0 3px 3px 0;
+                    style: solid;
+                    color: $color-point;
+                    radius: 2px;
+                }
+                box-sizing: border-box;
+                transform: rotate(45deg);
+            }
+        }
+        > div {
+            display: none;
+            overflow: hidden;
+            overflow-y: auto;
+            position: absolute;
+            top: 50px;
+            width: 180px;
+            max-height: 304px;
+            padding: 5px 15px;
+            border-radius: 12px;
+            box-shadow: 0 2px 5px 1px rgba($color: #000, $alpha: 0.05);
+            background: #fff;
+            box-sizing: border-box;
+            ul {
+                li {
+                    a {
+                        display: block;
+                        padding: 10px 0;
+                    }
+                    &.selected {
+                        a {
+                            color: $color-point;
+                            font-weight: bold;
+                        }
+                    }
+                }
+            }
+        }
+        &:last-child {
+            padding-right: 0;
+        }
+        &.selected {
+            > div {
+                display: block;
+            }
+        }
+    }
+    @include respond-to(md) {
+        margin-top: 40px;
+        .in-cate {
+            margin-right: 35px;
+            em {
+                display: inline-block;
+                margin-right: 9px;
+                color: rgba($color: #000, $alpha: 0.17);
+                font: {
+                    size: 15px;
+                    weight: bold;
+                }
+            }
+            button {
+                font-size: 15px;
+            }
+            > div {
+                top: 35px;
+            }
+        }
+    }
+}
+.def-tbl {
+    margin-top: 30px;
+    table {
+        text-align: center;
+        .tbl-h-tb,
+        .tbl-v-pc {
+            display: none;
+        }
+        thead {
+            th {
+                position: relative;
+                padding: 12px 10px;
+                background: rgba($color: #0f1fff, $alpha: 0.03);
+                color: rgba($color: #000, $alpha: 0.67);
+                &:first-child {
+                    border-radius: 5px 0 0 5px;
+                }
+                &:last-child {
+                    border-radius: 0 5px 5px 0;
+                }
+            }
+        }
+        tbody {
+            td {
+                padding: 15px 0;
+                border-bottom: 1px solid rgba($color: #979797, $alpha: 0.12);
+                .profile {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    position: relative;
+                    height: 44px;
+                    padding-left: 55px;
+                    text-align: left;
+                    .photo {
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        img {
+                            width: 44px;
+                            height: 44px;
+                            border-radius: 50%;
+                        }
+                    }
+                    em {
+                        font-weight: bold;
+                    }
+                    .nick {
+                        color: rgba($color: #000, $alpha: 0.48);
+                    }
+                }
+                > em {
+                    color: $color-point;
+                    font-weight: bold;
+                }
+            }
+        }
+    }
+    @include respond-to(md) {
+        table {
+            font-size: 16px;
+            .tbl-v-pc {
+                display: table-cell;
+            }
+            thead {
+                th {
+                    font: {
+                        weight: bold;
+                        size: 16px;
+                    }
+                }
+            }
+            tbody {
+                td {
+                    .profile {
+                        font-size: 15px;
+                    }
+                }
+            }
+        }
+    }
+    @include respond-to(xmd) {
+        table {
+            .tbl-h-tb {
+                display: table-cell;
+            }
+        }
+    }
+}

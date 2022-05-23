@@ -1,0 +1,129 @@
+/* var */
+/* mixin */
+@media (min-width: 1024px) {
+  .blog-w .tit-group {
+    text-align: center;
+  }
+}
+
+.blog-tab {
+  margin-top: 15px;
+  border-bottom: 2px solid rgba(151, 151, 151, 0.21);
+}
+.blog-tab ul {
+  display: flex;
+}
+.blog-tab ul li {
+  flex: auto;
+}
+.blog-tab ul li a {
+  display: block;
+  padding-bottom: 10px;
+  color: #7a7a7a;
+}
+.blog-tab ul li.selected a {
+  color: #6e0fff;
+  font-weight: bold;
+}
+@media (min-width: 1024px) {
+  .blog-tab {
+    position: relative;
+    max-width: 890px;
+    margin: 50px auto 0;
+    border: none;
+  }
+  .blog-tab:before, .blog-tab:after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 50%;
+    width: 23%;
+    height: 1px;
+    background: #7a7a7a;
+  }
+  .blog-tab:before {
+    left: 0;
+  }
+  .blog-tab:after {
+    right: 0;
+  }
+  .blog-tab ul {
+    justify-content: center;
+    font-size: 20px;
+  }
+  .blog-tab ul li {
+    flex: inherit;
+  }
+  .blog-tab ul li a {
+    padding: 0 15px;
+  }
+}
+
+.blog-list ul {
+  padding-top: 10px;
+}
+.blog-list ul li {
+  margin-top: 18px;
+}
+.blog-list ul li a {
+  overflow: hidden;
+  display: block;
+  max-width: 375px;
+  margin: 0 auto;
+  border-radius: 7px;
+  box-shadow: 0 2px 7px 1px rgba(0, 0, 0, 0.08);
+  background-color: #fff;
+}
+.blog-list ul li a .thumb {
+  display: block;
+  height: 115px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
+.blog-list ul li a .info {
+  padding: 15px;
+}
+.blog-list ul li a .info strong {
+  color: #0b0b0b;
+  font-size: 15px;
+}
+.blog-list ul li a .info p {
+  margin-top: 5px;
+  color: rgba(11, 11, 11, 0.5);
+}
+.blog-list ul li a .info > div {
+  margin-top: 15px;
+}
+.blog-list ul li a .info > div em {
+  padding-right: 15px;
+}
+.blog-list ul li a .info > div span {
+  color: rgba(11, 11, 11, 0.5);
+}
+@media (min-width: 780px) {
+  .blog-list {
+    max-width: 1235px;
+    margin: 0 auto;
+  }
+  .blog-list ul {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .blog-list ul li {
+    width: 50%;
+    padding: 0 17px;
+    box-sizing: border-box;
+  }
+  .blog-list ul li a .thumb {
+    height: 155px;
+  }
+}
+@media (min-width: 1220px) {
+  .blog-list ul li {
+    width: 33.3%;
+    margin-top: 50px;
+  }
+}
+
+/*# sourceMappingURL=blog.css.map */

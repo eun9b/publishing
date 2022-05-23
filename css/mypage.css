@@ -1,0 +1,331 @@
+/* var */
+/* mixin */
+.mypage-w {
+  max-width: 1452px;
+  margin: 0 auto;
+}
+.mypage-w .stit-w {
+  margin-top: 20px;
+}
+.mypage-w .stit-w h3 {
+  font-size: 20px;
+}
+.mypage-w .stit-w p {
+  color: rgba(11, 11, 11, 0.52);
+  font-size: 14px;
+}
+@media (min-width: 1024px) {
+  .mypage-w .stit-w {
+    display: flex;
+    align-items: center;
+    margin-top: 45px;
+    padding-bottom: 15px;
+  }
+  .mypage-w .stit-w h3 {
+    font-size: 22px;
+  }
+  .mypage-w .stit-w p {
+    padding-left: 13px;
+    font-size: 18px;
+  }
+}
+.mypage-w .use-box .viewport {
+  overflow: hidden;
+  overflow-x: auto;
+  width: 100%;
+}
+.mypage-w .use-box ul {
+  margin-top: 5px;
+}
+.mypage-w .use-box ul li {
+  margin-top: 11px;
+}
+.mypage-w .use-box ul li .card {
+  max-width: 424px;
+  margin: 0 auto;
+  padding: 22px 28px;
+  border-radius: 18px;
+  background-image: radial-gradient(circle at 90% 58%, #f3f2ff, #f3efff 73%);
+}
+.mypage-w .use-box ul li .card strong {
+  font-size: 15px;
+}
+.mypage-w .use-box ul li .card p {
+  margin-top: 35px;
+  color: rgba(11, 11, 11, 0.45);
+  font-size: 12px;
+}
+.mypage-w .use-box ul li .card > div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 15px;
+  font-size: 13px;
+}
+.mypage-w .use-box ul li .card > div i {
+  display: flex;
+  font-size: 13px;
+}
+.mypage-w .use-box ul li .card > div i:before {
+  content: '';
+  display: inline-block;
+  width: 18px;
+  height: 18px;
+  margin-right: 5px;
+  background: url("../images/img_card.png") no-repeat 0 0;
+  background-size: cover;
+}
+.mypage-w .use-box ul li .card > div em {
+  font-weight: bold;
+}
+.mypage-w .use-box ul li .card.cho {
+  background-image: radial-gradient(circle at 56% 64%, #1f1f21, #403f45 89%);
+}
+.mypage-w .use-box ul li .card.cho strong {
+  color: #fff;
+}
+.mypage-w .use-box ul li .card.cho p {
+  color: rgba(255, 255, 255, 0.45);
+}
+.mypage-w .use-box ul li .card.cho > div i {
+  color: #fff;
+}
+.mypage-w .use-box ul li .card.cho > div em {
+  color: #fff;
+}
+.mypage-w .use-box .controller {
+  display: flex;
+  justify-content: center;
+  margin-top: 35px;
+}
+.mypage-w .use-box .controller a {
+  min-width: 16px;
+  height: 5px;
+  margin: 0 2px;
+  background: #cfcfcf;
+  border-radius: 4px;
+}
+.mypage-w .use-box .controller a.selected {
+  width: 32px;
+}
+@media (min-width: 980px) {
+  .mypage-w .use-box ul {
+    display: flex;
+    width: 100%;
+    margin-top: 35px;
+  }
+  .mypage-w .use-box ul li {
+    min-width: 50%;
+    margin-top: 0;
+    padding: 0 10px;
+    box-sizing: border-box;
+  }
+  .mypage-w .use-box ul li .card {
+    border-radius: 18px;
+  }
+  .mypage-w .use-box ul li .card strong {
+    font-size: 20px;
+  }
+  .mypage-w .use-box ul li .card p {
+    margin-top: 55px;
+    font-size: 17px;
+  }
+  .mypage-w .use-box ul li .card > div {
+    font-size: 17px;
+  }
+  .mypage-w .use-box ul li .card > div i {
+    font-size: 17px;
+  }
+  .mypage-w .use-box ul li .card > div i:before {
+    width: 25px;
+    height: 25px;
+  }
+}
+@media (min-width: 1220px) {
+  .mypage-w .use-box ul li {
+    min-width: 33.3%;
+  }
+}
+.mypage-w .inbox {
+  margin-top: 11px;
+  padding: 15px 20px;
+  background: #fff;
+  border-radius: 12px;
+}
+.mypage-w .inbox h4 {
+  font-size: 14px;
+}
+.mypage-w .inbox ul.fr-list li {
+  margin-top: 19px;
+}
+.mypage-w .inbox ul.fr-list li i.tit,
+.mypage-w .inbox ul.fr-list li > label {
+  display: block;
+  font-weight: bold;
+}
+.mypage-w .inbox ul.fr-list li > div {
+  flex: auto;
+  margin-top: 8px;
+}
+.mypage-w .inbox ul.fr-list li > div > p {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.mypage-w .inbox ul.fr-list li > div > p i {
+  padding-bottom: 5px;
+  padding-right: 5px;
+}
+.mypage-w .inbox ul.fr-list li > div > p span {
+  width: 17px;
+  height: 17px;
+  background: url("../images/icon_check02.svg") no-repeat 0 0;
+  font-size: 1px;
+  text-indent: -9999px;
+}
+.mypage-w .inbox ul.fr-list li > div > a {
+  color: #0c55e9;
+}
+.mypage-w .inbox ul.fr-list li:first-child {
+  margin-top: 0;
+}
+.mypage-w .inbox ul.chk-list {
+  padding-top: 5px;
+}
+.mypage-w .inbox ul.chk-list li {
+  margin-top: 4px;
+}
+.mypage-w .inbox ul.chk-list li input {
+  margin-right: 5px;
+}
+.mypage-w .inbox .btn {
+  margin-top: 40px;
+}
+.mypage-w .inbox .btn a {
+  display: inline-block;
+  height: 31px;
+  padding: 0 27px;
+  background: #6e0fff;
+  border-radius: 5px;
+  color: #fff;
+  font-size: 12px;
+  line-height: 30px;
+}
+.mypage-w .inbox > p {
+  margin-top: 9px;
+}
+.mypage-w .inbox > p a {
+  font-size: 12px;
+  color: #0c55e9;
+}
+.mypage-w .inbox .inc-mail {
+  display: inline-block;
+  height: 31px;
+  margin-top: 4px;
+  margin-bottom: 4px;
+  margin-left: auto;
+  padding: 0 15px;
+  border: 1px solid #6e0fff;
+  color: #6e0fff;
+  white-space: nowrap;
+  font-size: 14px;
+  line-height: 30px;
+  border-radius: 6px;
+}
+.mypage-w .inbox table {
+  overflow: hidden;
+  margin-top: 16px;
+  border-radius: 8px;
+  font-size: 12px;
+  text-align: center;
+}
+.mypage-w .inbox table .tbl-v-pc {
+  display: none;
+}
+.mypage-w .inbox table thead th {
+  height: 36px;
+  background: rgba(15, 31, 255, 0.03);
+  font-weight: bold;
+}
+.mypage-w .inbox table tbody tr td {
+  padding: 7px 10px;
+  color: rgba(0, 0, 0, 0.67);
+}
+.mypage-w .inbox table tbody tr td a {
+  color: #1b33fd;
+}
+.mypage-w .inbox table tbody tr:first-child td {
+  padding-top: 14px;
+}
+.mypage-w .inbox .ft-desc {
+  margin-top: 20px;
+}
+@media (min-width: 1024px) {
+  .mypage-w .inbox {
+    margin-top: 11px;
+    padding: 35px 40px;
+  }
+  .mypage-w .inbox h4 {
+    font-size: 20px;
+  }
+  .mypage-w .inbox ul.fr-list li {
+    display: flex;
+    font-size: 20px;
+  }
+  .mypage-w .inbox ul.fr-list li i.tit,
+  .mypage-w .inbox ul.fr-list li > label {
+    width: 194px;
+    font-size: 20px;
+  }
+  .mypage-w .inbox ul.fr-list li > div {
+    margin-top: 0;
+  }
+  .mypage-w .inbox ul.fr-list li > div input[type="text"] {
+    width: 298px;
+  }
+  .mypage-w .inbox ul.chk-list li {
+    margin-top: 14px;
+  }
+  .mypage-w .inbox ul.chk-list li label {
+    font-size: 16px;
+  }
+  .mypage-w .inbox .btn {
+    margin-top: 50px;
+  }
+  .mypage-w .inbox .btn a {
+    height: 46px;
+    padding: 0 38px;
+    font-size: 18px;
+    line-height: 44px;
+  }
+  .mypage-w .inbox > p a {
+    font-size: 18px;
+  }
+  .mypage-w .inbox .inc-mail {
+    height: 46px;
+    padding: 0 20px;
+    font-size: 18px;
+    line-height: 44px;
+  }
+  .mypage-w .inbox .inc-mail:hover {
+    background: #6e0fff;
+    color: #fff;
+  }
+  .mypage-w .inbox table {
+    font-size: 16px;
+  }
+  .mypage-w .inbox table .tbl-v-pc {
+    display: table-cell;
+  }
+  .mypage-w .inbox table thead th {
+    height: 51px;
+  }
+  .mypage-w .inbox table tbody td {
+    padding: 10px;
+  }
+  .mypage-w .inbox .ft-desc {
+    margin-top: 35px;
+  }
+}
+
+/*# sourceMappingURL=mypage.css.map */

@@ -1,0 +1,358 @@
+@import "utils.scss";
+
+.mypage-w {
+    max-width: 1452px;
+    margin: 0 auto;
+    .stit-w {
+        margin-top: 20px;
+        h3 {
+            font-size: 20px;
+        }
+        p {
+            color: rgba($color: #0b0b0b, $alpha: 0.52);
+            font-size: 14px;;
+        }
+        @include respond-to(md) {
+            display: flex;
+            align-items: center;
+            margin-top: 45px;
+            padding-bottom: 15px;
+            h3 {
+                font-size: 22px;
+            }
+            p {
+                padding-left: 13px;
+                font-size: 18px;
+            }
+        }
+    }
+    .use-box {
+        .viewport {
+            overflow: hidden;
+            overflow-x: auto;
+            width: 100%;
+        }
+        ul {
+            margin-top: 5px;
+            li {
+                margin-top: 11px;
+                .card {
+                    max-width: 424px;
+                    margin: 0 auto;
+                    padding: 22px 28px;
+                    border-radius: 18px;
+                    background-image: radial-gradient(circle at 90% 58%, #f3f2ff, #f3efff 73%);
+                    strong {
+                        font-size: 15px;
+                    }
+                    p {
+                        margin-top: 35px;
+                        color: rgba($color: #0b0b0b, $alpha: 0.45);
+                        font-size: 12px;
+                    }
+                    > div {
+                        display: flex;
+                        align-items: center;
+                        justify-content: space-between;
+                        margin-top: 15px;
+                        font-size: 13px;
+                        i {
+                            display: flex;
+                            font-size: 13px;
+                            &:before {
+                                content: '';
+                                display: inline-block;
+                                width: 18px;
+                                height: 18px;
+                                margin-right: 5px;
+                                background: url('../images/img_card.png') no-repeat 0 0;
+                                background-size: cover;
+                            }
+                        }
+                        em {
+                            font-weight: bold;
+                        }
+                    }
+                    &.cho {
+                        background-image: radial-gradient(circle at 56% 64%, #1f1f21, #403f45 89%);
+                        strong {
+                            color: #fff;
+                        }
+                        p {
+                            color: rgba($color: #fff, $alpha: 0.45);
+                        }
+                        > div {
+                            i {
+                                color: #fff;
+                            }
+                            em {
+                                color: #fff;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .controller {
+            display: flex;
+            justify-content: center;
+            margin-top: 35px;
+            a {
+                min-width: 16px;
+                height: 5px;
+                margin: 0 2px;
+                background: #cfcfcf;
+                border-radius: 4px;
+                &.selected {
+                    width: 32px;
+                }
+            }
+        }
+        @include respond-to(xsm) {
+            ul {
+                display: flex;
+                //justify-content: center;
+                width: 100%;
+                margin-top: 35px;
+                li {
+                    min-width: 50%;
+                    margin-top: 0;
+                    padding: 0 10px;
+                    box-sizing: border-box;
+                    .card {
+                        border-radius: 18px;
+                        strong {
+                            font-size: 20px;
+                        }
+                        p {
+                            margin-top: 55px;
+                            font-size: 17px;
+                        }
+                        > div {
+                            font-size: 17px;
+                            i {
+                                font-size: 17px;
+                                &:before {
+                                    width: 25px;
+                                    height: 25px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        @include respond-to(xmd) {
+            ul {
+                li {
+                    min-width: 33.3%;
+                }
+            }
+        }
+    }
+    .inbox {
+        margin-top: 11px;
+        padding: 15px 20px;
+        background: #fff;
+        border-radius: 12px;
+        h4 {
+            font-size: 14px;
+        }
+        ul.fr-list {
+            li {
+                margin-top: 19px;
+                i.tit,
+                > label {
+                    display: block;
+                    font-weight: bold;
+                }
+                > div {
+                    flex: auto;
+                    margin-top: 8px;
+                    > p {
+                        display: flex;
+                        flex-wrap: wrap;
+                        align-items: center;
+                        i {
+                            padding: {
+                                bottom: 5px;
+                                right: 5px;
+                            }
+                        }
+                        span {
+                            width: 17px;
+                            height: 17px;
+                            background: url('../images/icon_check02.svg') no-repeat 0 0;
+                            font-size: 1px;
+                            text-indent: -9999px;
+                        }
+                    }
+                    > a {
+                        color: #0c55e9;
+                    }
+                }
+                &:first-child {
+                    margin-top: 0;
+                }
+            }
+        }
+        ul.chk-list {
+            padding-top: 5px;
+            li {
+                margin-top: 4px;
+                input {
+                    margin-right: 5px;
+                }
+            }
+        }
+        .btn {
+            margin-top: 40px;
+            a {
+                display: inline-block;
+                height: 31px;
+                padding: 0 27px;
+                background: $color-point;
+                border-radius: 5px;
+                color: #fff;
+                font-size: 12px;
+                line-height: 30px;
+            }
+        }
+        > p {
+            margin-top: 9px;
+            a {
+                font-size: 12px;
+                color: #0c55e9;
+            }
+        }
+        .inc-mail {
+            display: inline-block;
+            height: 31px;
+            margin: {
+                top: 4px;
+                bottom: 4px;
+                left: auto;
+            }
+            padding: 0 15px;
+            border: 1px solid $color-point;
+            color: $color-point;
+            white-space: nowrap;
+            font-size: 14px;
+            line-height: 30px;
+            border-radius: 6px;
+        }
+        table {
+            overflow: hidden;
+            margin-top: 16px;
+            border-radius: 8px;
+            font-size: 12px;
+            text-align: center;
+            .tbl-v-pc {
+                display: none;
+            }
+            thead {
+                th {
+                    height: 36px;
+                    background: rgba($color: #0f1fff, $alpha: 0.03);
+                    font: {
+                        weight: bold;
+                    }
+                }
+            }
+            tbody {
+                tr {
+                    td {
+                        padding: 7px 10px;
+                        color: rgba($color: #000, $alpha: 0.67);
+                        a {
+                            color: #1b33fd;
+                        }
+                    }
+                    &:first-child {
+                        td {
+                            padding-top: 14px;
+                        }
+                    }
+                }
+            }
+        }
+        .ft-desc {
+            margin-top: 20px;
+        }
+        @include respond-to(md) {
+            margin-top: 11px;
+            padding: 35px 40px;
+            h4 {
+                font-size: 20px;
+            }
+            ul.fr-list {
+                li {
+                    display: flex;
+                    font-size: 20px;
+                    i.tit,
+                    > label {
+                        width: 194px;
+                        font-size: 20px;
+                    }
+                    > div {
+                        margin-top: 0;
+                        input[type="text"] {
+                            width: 298px;
+                        }
+                    }
+                }
+            }
+            ul.chk-list {
+                li {
+                    margin-top: 14px;
+                    label {
+                        font-size: 16px;
+                    }
+                }
+            }
+            .btn {
+                margin-top: 50px;
+                a {
+                    height: 46px;
+                    padding: 0 38px;
+                    font-size: 18px;
+                    line-height: 44px;
+                }
+            }
+            > p {
+                a {
+                    font-size: 18px;
+                }
+            }
+            .inc-mail {
+                height: 46px;
+                padding: 0 20px;
+                font-size: 18px;
+                line-height: 44px;
+                &:hover {
+                    background: $color-point;
+                    color: #fff;
+                }
+            }
+            table {
+                font-size: 16px;
+                .tbl-v-pc {
+                    display: table-cell;
+                }
+                thead {
+                    th {
+                        height: 51px;
+                    }
+                }
+                tbody {
+                    td {
+                        padding: 10px;
+                    }
+                }
+            }
+            .ft-desc {
+                margin-top: 35px;
+            }
+        }
+    }
+}
